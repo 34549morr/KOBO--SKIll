@@ -1,0 +1,30 @@
+{
+  "version": "0.5.0",
+  "kind": "workflow",
+  "order": 5,
+  "icon": "scissors",
+  "requires": [
+    "film"
+  ],
+  "platforms": [
+    "windows",
+    "macos",
+    "linux"
+  ],
+  "title": {
+    "zh-CN": "口播剪辑",
+    "en": "Talking-head editor"
+  },
+  "summary": {
+    "zh-CN": "稿子进、成片出：切句打字幕、关键词逐词动画、每 8-12 秒一张海报帧、音效与质检。",
+    "en": "Script in, film out: captions with per-word animation, a poster frame every 8-12s, sfx and checks."
+  },
+  "details": {
+    "zh-CN": "给口播稿：断句与分行、关键词识别与三级重点、按语速定时、生成带逐词动画的 WebVTT 字幕轨、生成层级排版海报帧页面、合成 whoosh/impact/riser 音效，最后检查字幕覆盖率、海报间隔、响度与越界。所有默认值来自六条真实抖音口播片的逐帧测量，规则文件在 references/rules.md。",
+    "en": "From a script: sentence and line splitting, keyword levels, timing, an animated WebVTT caption track, poster-frame pages, sfx, and checks for coverage, poster spacing and loudness."
+  },
+  "needs": {
+    "zh-CN": "Node 20+；ffprobe 仅用于非 wav 旁白与响度检查。",
+    "en": "Node 20+; ffprobe only for non-wav narration and loudness."
+  }
+}
